@@ -8,6 +8,10 @@ color: white;}
 
 /* ********nav bar *********************/
 
+audio{
+    margin: 0.5rem 2rem;
+    width: 80%;
+}
 
 /*mobile first*/
 header { 
@@ -263,7 +267,13 @@ text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px
 
 /* *** lighting for title ended *** */
 
-
+.hero-band {
+    width: 100%;
+    height: 70vh;
+    background-image: url(images/Missing_div.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 
 article { color: white;
@@ -305,14 +315,30 @@ h4 { font-size: 2rem;}
     position: relative;
     width: 100%;
     height: 100%;
-    text-align: center;
+    text-align: left;
+    font-size: 1.3rem;
     transition: transform 0.8s;
     transform-style: preserve-3d;
   }
+
+  .flip-card-inner h1 {
+      font-size: 1.6rem;
+      text-align: center;
+  }
+
+  .flip-card-inner p{ 
+      padding: 0.2rem;
+  }
+  /*
+.flip-card:hover { 
+  <audio controls="controls" autoplay>
+  <source src="sounds/heavy-metal-riffin.mp3;" type="audio/mp3" />
+  </audio> }*/
   
   /* Do an horizontal flip when you move the mouse over the flip box container */
   .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
+
   }
   
   /* Position the front and back side */
@@ -341,3 +367,145 @@ h4 { font-size: 2rem;}
     transform: rotateY(180deg);
     bottom: 1rem;
   }
+
+  .fa-solid { color: gold;
+font-size: 30px;
+font-weight: 900;}
+
+.reviews { 
+    margin-top: 5rem;
+     display: flex;
+justify-content: space-around;}
+
+.review-card {
+    text-align: center;
+  font-size: 1.4em;
+    width: 300px;
+    height: 300px;
+}
+
+h6 { font-size: 1.5rem;
+font-style: oblique;}
+
+/***************************Nigels table code is SASS *******************************/
+
+/* font-family: Arial, Helvetica, sans-serif;
+}
+main {
+	&::before {
+		content: ' ';
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		opacity: 0.6;
+		background-image: url('/145559.svg');
+		background-repeat: no-repeat;
+		background-position: 50% 0;
+		background-size: cover;
+		z-index: -1;
+	}
+}
+.table_container {
+	padding: 0 10%;
+	margin: 3.25rem auto 0;
+}
+.tour_title {
+	font-size: 6rem;
+	text-align: center;
+	margin-bottom: 40px;
+	font-family: 'Metal Mania', cursive;
+	color: #fff;
+}
+.table {
+	width: 100%;
+	border-collapse: collapse;
+	thead {
+		background-color: #7E1A36;
+		tr {
+			th {
+				font-size: 3rem;
+				font-weight: 600;
+				letter-spacing: 0.35px;
+				padding: 1rem;
+				vertical-align: top;
+				border: 1px solid #fff;
+				color: #000;
+			}
+		}
+	}
+	tbody {
+		tr {
+			td {
+				font-size: 2rem;
+				letter-spacing: 0.35px;
+				font-weight: normal;
+				color: white;
+				background-color: #2B2B2B;
+				padding: 1rem;
+				text-align: center;
+				border: 1px solid #000;
+			}
+		}
+	}
+}
+#book_now {
+	width: 500px;
+	max-width: 100%;
+	height: 233px;
+	margin: 3rem auto;
+	background-image: url("/tickets.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center center;
+	display: block;
+}
+@media only screen and (max-width:786px) {
+	.table {
+		thead {
+			display: none;
+		}
+		display: block;
+		width: 100%;
+		tbody {
+			display: block;
+			width: 100%;
+			tr {
+				td {
+					text-align: right;
+					padding-right: 1rem 2rem 1rem 0;
+					padding-left: 50%;
+					position: relative;
+				}
+			}
+		}
+		tr {
+			display: block;
+			width: 100%;
+			margin-bottom: 3rem;
+			border: 1px solid #fff;
+		}
+		td {
+			display: block;
+			width: 100%;
+			&::before {
+				content: attr(data-label);
+				position: absolute;
+				left: 1rem;
+				width: 30%;
+				padding-left: 1rem;
+				font-weight: 600;
+				font-size: 2rem;
+				text-align: left;
+				color: #000;
+				background-color: #7E1A36;
+				border: 1px solid #fff;
+				display: inline-block;
+				margin-bottom: 2rem;
+			}
+		}
+	}
+}
+*/

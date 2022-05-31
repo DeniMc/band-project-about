@@ -1,0 +1,66 @@
+*{ margin: 0%;
+padding: 0%;
+box-sizing: border-box;}
+
+.shop-banner {
+    width: 100vw;
+    height: 26vw;
+    background-image: url(images/banner-atmos.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.store-title { font-size: 8rem;
+margin-left: 20%;
+font-family: 'Bungee Shade', cursive;}
+
+.navbar {
+    margin-top: 1rem;
+    margin-left: 20%;
+}
+
+h1 {
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 2rem;
+    font-family: 'Bungee Shade', cursive;
+}
+
+   
+
+.container {
+    display: grid;
+    gap:20px;
+    grid-template-columns: repeat(auto-fit, minmax(30rem,1fr));
+     }
+
+    .container div {
+        background-position: center;
+    background-size: cover;
+    height: 300px;
+    width: 600px;
+    margin: 20px;
+   }
+
+   .shop-item { display: flex;
+    border: 3px solid white; }
+
+label, select, input { display: block;
+padding: 0.4rem;
+margin-left: 5%;
+color: white;
+}
+
+input, select { width: 270px;
+margin-left: 5%;}
+
+label { text-align: center;
+color: red;
+font-size: 1.2rem;
+font-weight: 800;}
+
+input { margin-top: 1rem;
+background-color: purple;
+font-size: 1.2rem;
+font-weight: 800;}
+
